@@ -25,17 +25,40 @@
             background: #000e5f;
             color: #fff;
             text-align: center;
-            border-bottom: 5px solid #000000; 
+            border-bottom: 5px solid #000; 
         }
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .lewis, .course, .job {
-            background: #e7e7e7;
+        .main-info a {
+            color: #0cb0fc; /* Link color (e.g., tomato red) */
+        }
+        .main-info img {
+            border: 5px solid #000;
+            border-radius: 10px;
+        }
+        .main-info a:hover {
+            color: #47c5ff; /* Hover color (e.g., orange) */
+        }
+        .hobbies, .lewis, .course, .fun-fact {
+            background: #fff;
             padding: 15px;
             margin-bottom: 10px;
             border-radius: 10px;
-            border: 5px solid #000000; 
+            border: 5px solid #000; 
+        }
+        .fun-fact {
+            text-align: center;
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 5px solid #000; 
+        }
+        .fun-fact img {
+            display: inline-block;
+            border-radius: 10px;
+            margin: auto;     /* Centers the image horizontally */
         }
     </style>
 </head>
@@ -43,25 +66,25 @@
 
     <header class="main-info">
         <h1>Anthony Viglielmo</h1>
-        <h4>E-mail: anthonyjviglielmo@lewisu.edu</h4>
+        <a href="me-800-by-800.jpeg">
+        <img src="me-300-by-300.jpeg" alt="me">
+        </a>
+        <br>
+        <a href="mailto:anthonyjviglielmo@lewisu.edu">anthonyjviglielmo@lewisu.edu</a>
+        <h4>Discord: @JigglyJello</h4>
     </header>
 
     <div class="container">
 
         <section class="lewis">
             <h2>Introduction</h2>
-			<p>I'm Anthony Viglielmo, A Junior with 2 years here at Lewis. I am a Computer Science Major and I am pursuing this degree because I enjoy programming.</p>
+			<p>I'm Anthony Viglielmo, A Junior here at Lewis. I am a Computer Science Major and I am pursuing this degree because I was interested in learning how to code in highschool, so I took some Computer Science courses there and enjoyed them.</p>
         </section>
 
 		<section class="course">
             <h2>Reasons for Taking This Course</h2>
-            <p>This course is a requirement for my major but I still hope I can enjoy this class and learning more about software development.</p>
+            <p>This course is a requirement for my major but I still hope I can enjoy this class and learn more about software development.</p>
         </section>
-
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Your job responsibilities]</p>
-        </section>		
 
         <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
@@ -69,8 +92,16 @@
         </section>
 
         <section class="fun-fact">
-            <h2>Fun Fact</h2>
-            <p>[A fun fact about yourself]</p>
+            <h2 style="display: inline;">Fun Fact </h2> <p style="display: inline;">I have 4 pets!</p>
+            <br>
+            <img src="Pets/Roxie.jpeg" alt="My new puppy Roxie">
+            <img src="Pets/Jingles&Pumpkin.jpeg" alt="My cats, Jingles and Pumpkin laying in a laundry basket">
+            <img src="Pets/PumpkinJingles&Wrigley.jpeg" alt="My dog Wrigley sniffing my cat Jingles">
+            <br>
+            <img src="Pets/JinglesBag.jpeg" alt="My cat Jingles laying in a shopping bag">
+            <img src="Pets/ZoeyJingles&Wrigley.jpeg" alt="Wrigley rolls on the floor while the others lay on the couch">
+            
+            <img src="Pets/PumpkinJingles&Wrigley.jpeg" alt="My dog Wrigley sniffing my cat Jingles">
         </section>
     </div>
 </body>
